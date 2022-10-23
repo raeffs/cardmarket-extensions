@@ -1,7 +1,7 @@
 
 // ==UserScript==
 // @name         Cardmarket Extensions
-// @version      1.0
+// @version      1.1
 // @match        https://www.cardmarket.com/*
 // @downloadURL  https://raw.githubusercontent.com/raeffs/cardmarket-extensions/main/dist/cardmarket.extensions.user.js
 // @updateURL    https://raw.githubusercontent.com/raeffs/cardmarket-extensions/main/dist/cardmarket.extensions.user.js
@@ -138,7 +138,6 @@
   function decorateOffersSingles() {
     for (const offer of getChildrenByClass(document, "article-row")) {
       const productName = getChildByClass(offer, "col-seller");
-      productName.classList.add("flex-column", "align-items-start");
       const productAttributes = getChildByClass(offer, "product-attributes");
       const condition = parseCondition(getChildByClass(productAttributes, "article-condition").textContent);
       const language = parseLanguage(

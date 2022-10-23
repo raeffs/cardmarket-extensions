@@ -3,7 +3,7 @@ const builder = require('esbuild');
 function getHeader(version) {
   return `
 // ==UserScript==
-// @name         Cardmarket Extensions
+// @name         Cardmarket Extensions Dev
 // @version      ${version}
 // @match        https://www.cardmarket.com/*
 // @downloadURL  http://localhost:3000/cardmarket.extensions.user.js
