@@ -8,7 +8,8 @@ function getHeader(version) {
 // @match        https://www.cardmarket.com/*
 // @downloadURL  http://localhost:3000/cardmarket.extensions.user.js
 // @updateURL    http://localhost:3000/cardmarket.extensions.user.js
-// @grant        none
+// @grant        GM_setValue
+// @grant        GM_getValue
 // ==/UserScript==
     `;
 }

@@ -8,7 +8,7 @@ import { Flags } from '../models/flags';
 import { parseLanguage } from '../models/languages';
 import { RequestParams } from '../models/request-params';
 
-export function decorateOffersSingles(): void {
+export async function decorateOffersSingles(): Promise<void> {
   for (const offer of getChildrenByClass(document, 'article-row')) {
     const productName = getChildByClass(offer, 'col-seller');
 

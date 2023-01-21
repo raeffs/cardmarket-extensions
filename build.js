@@ -1,6 +1,6 @@
 const builder = require('esbuild');
 
-const version = '1.1';
+const version = '1.2';
 
 function getHeader(version) {
   return `
@@ -10,7 +10,8 @@ function getHeader(version) {
 // @match        https://www.cardmarket.com/*
 // @downloadURL  https://raw.githubusercontent.com/raeffs/cardmarket-extensions/main/dist/cardmarket.extensions.user.js
 // @updateURL    https://raw.githubusercontent.com/raeffs/cardmarket-extensions/main/dist/cardmarket.extensions.user.js
-// @grant        none
+// @grant        GM_setValue
+// @grant        GM_getValue
 // ==/UserScript==
     `;
 }
